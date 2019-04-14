@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+
+    <title>Elevated Arts</title>
+  </head>
+  <body id="">
+
+    <nav class="nav navbar-dark" style="background: #6568FF">
+      <span class="container">
+        <span class="nav navbar-nav">
+          <span class="nav navbar-inverse justify-content-center">
+            <a class="nav-item nav-link px-5"href="index.html">Home</a>
+            <a class="nav-item nav-link px-5"href="about.html">About</a>
+            <a class="nav-item nav-link px-5"href="testimonials.html">Testimonials</a>
+            <a class="nav-item nav-link px-5"href="services.html">Services</a>
+            <a class="nav-item nav-link px-5"href="events.html">Events</a>
+            <a class="nav-item nav-link px-5"href="contact.html">Contact</a>
+
+          </span>
+        </span>
+      </span>
+    </nav>
+
+    <!--Section: Contact v.2-->
+        <section class="mb-4" style="">
+            <!--Section heading-->
+            <img id="stacked" class="float-left mr-5 pb-5" src="imgs/contact.jpg" alt="Contact us">
+            <h2 class="h1-responsive font-weight-bold text-center mt-5 p-3" style="color: #414042">Contact us!</h2>
+            <!--Section description-->
+            <div id="contactform" class="row justify-content-center " style="">
+
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                                <div class="form-check pt-3">
+                                    <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+                                    <label for="updates" class="form-check-label ">Receive email updates</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                    <span class="container">
+                      <div class="text-center text-md-left">
+                          <a class="btn btn-primary" onclick="validateForm()">Send</a>
+                          <span id="status" class="text-sm-center pl-2"></span>
+                        </div>
+                      </div>
+                    </span>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li class="pr-1"><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <a href="https://www.google.com/maps/place/11225+Front+St,+Mokena,+IL+60448/@41.5296686,-87.892562,17z/data=!3m1!4b1!4m5!3m4!1s0x880e6b08dec8204b:0x5cb9e6bcc43bb8db!8m2!3d41.5296686!4d-87.8903733"
+                            target="_blank" style="color: #414042"><br>11225 Front St, Mokena, IL 60448</a>
+                        </li>
+                        <li class="pr-1"><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <a href="tel:+1-708-287-7092"><br>(708) 287-7092</a>
+                        </li>
+                        <li class="pr-1"><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <a href="mailto:elevatedarts3@gmail.com" target="_blank"><br>elevatedarts3@gmail.com</a>
+                        </li>
+                        <li class="pr-1"><i class="fab fa-instagram mt-4 fa-2x"></i>
+                            <a href="https://www.instagram.com/elevated_arts/" target="_blank" style="color: #414042"><br>@elevated_arts</a>
+                        </li>
+                        <li class="pr-1"><i class="fab fa-facebook mt-4 fa-2x"></i>
+                            <a href="http://www.facebook.com/elevatedarts" target="_blank" style="color: #414042"><br>facebook.com/elevatedarts</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+          </section>
+
+<!--Section: Contact v.2-->
+
+    <div class="container-fluid px-0 justify-content-center" id="chakra">
+      <img class="container-fluid" src="imgs/chakra.png" alt="Chakras">
+    </div>
+
+    <nav id="botnav" class="nav navbar-dark" style="background: #47C0D7">
+      <span class="container">
+        <span class="nav navbar-nav">
+          <span class="nav navbar-inverse justify-content-center">
+            <a class="nav-item nav-link px-2"href="tel:+1-708-287-7092">(708) 287-7092</a>
+            <a class="nav-item nav-link px-2"href="https://www.google.com/maps/place/11225+Front+St,+Mokena,+IL+60448/@41.5297709,-87.8904929,3a,75y,117.76h,90t/data=!3m7!1e1!3m5!1sQJmQfBk2cLQRbbH2iZCKBg!2e0!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3DQJmQfBk2cLQRbbH2iZCKBg%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D117.762085%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x880e6b08dec8204b:0x5cb9e6bcc43bb8db!8m2!3d41.5296686!4d-87.8903733">11225 Front St, Mokena, IL 60448</a>
+            <a class="nav-item nav-link px-2"href="http://www.facebook.com/elevatedarts">https://www.facebook.com/elevatedarts/</a>
+          </span>
+        </span>
+      </span>
+    </nav>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+
+  </body>
+</html>
